@@ -5,6 +5,15 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 
+# node_modules
+/node_modules/
+
+#bower_component
+/bower_components/
+
+#WebStorm project config
+/.idea/
+
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
