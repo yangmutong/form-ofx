@@ -1,0 +1,38 @@
+{
+  "form": [
+    "select",
+    {
+      "key": "amount",
+      "validationMessage": {
+        "302": "error message"
+      }
+    },
+    {
+      "type": "submit",
+      "style": "btn-info",
+      "title": "submit"
+    }
+  ],
+  "schema":{
+    "type": "object",
+    "properties": {
+      "select": {
+        "title": "select one of kind of cash",
+        "type": "string",
+        "enum": [
+          "SGD",
+          "USD"
+        ]
+      },
+      "amount":{
+        "title": "fill in an amount of money",
+        "type": "number"
+      }
+    },
+    "required": [
+      "select",
+      "amount"
+    ]
+  },
+  "model": {}
+}

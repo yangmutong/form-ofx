@@ -1,0 +1,19 @@
+{
+  "name": "form-ofx",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "^1.5",
+    "angular-ui-router": "^0.2.18",
+    "jquery": "^2.2.3",
+    "sg-scb-ng-component": "../scb-ng-component/dist.tar"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.5"
+  },
+  "appPath": "app",
+  "moduleName": "ofx",
+  "resolutions": {
+    "angular": "^1.5"
+  }
+}
+

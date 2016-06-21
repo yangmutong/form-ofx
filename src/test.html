@@ -6,42 +6,32 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ofx demo</title>
-    <base href="/form-ofx/">
     <!--<link rel="stylesheet" href="../bower_components/html5-boilerplate/dist/css/normalize.css">-->
     <!--<link rel="stylesheet" href="../bower_components/html5-boilerplate/dist/css/main.css">-->
     <!--<script src="../bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>-->
+    <base href="/form-ofx/">
     <link rel="stylesheet" href="bootstrap-3.3.5/css/bootstrap.css">
     <link rel="stylesheet" href="bootstrap-3.3.5/css/bootstrap-theme.css">
-
 </head>
 <body ng-app="ofx" ng-cloak>
 
 
-    <div class="container" ng-controller="ofxController">
-        <div class="step-form" ng-include="'src/app/step/step.tpl.html'"></div>
-        <hr>
-        <div class="transfer-form" ui-view="transfer"></div>
+    <div class="container" ng-controller="testController">
+
+        <form name="myForm" sf-schema="schema" sf-form="form" sf-model="model" ng-submit="submit(myForm)" sf-options="{ formDefaults: { ngModelOptions: { updateOn: 'blur' } }}"></form>
+
     </div>
 
+    <!--<div class="container" ui-view></div>-->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bootstrap-3.3.5/js/bootstrap.js"></script>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/tv4/tv4.js"></script>
     <script src="bower_components/objectpath/lib/ObjectPath.js"></script>
     <script src="bower_components/angular-schema-form/dist/schema-form.js"></script>
     <script src="bower_components/angular-schema-form-bootstrap/bootstrap-decorator.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
-    <script src="src/app/app.js"></script>
-    <script src="src/app/common/services/ofx-loadForm.service.js"></script>
-    <script src="src/app/home/ofx-home.controller.js"></script>
-    <script src="src/app/to/ofx-to.controller.js"></script>
-    <script src="src/app/to/contact/ofx-to-contact.controller.js"></script>
-    <script src="src/app/to/myAccount/ofx-to-myAccount.controller.js"></script>
-    <script src="src/app/from/ofx-from.controller.js"></script>
-    <script src="src/app/amount/ofx-amount.controller.js"></script>
-    <script src="src/app/review/ofx-review.controller.js"></script>
-    <script src="src/app/step/ofx-step.controller.js"></script>
+    <script src="src/app/test.js"></script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+{
+  "form": [
+    "select",
+    {
+      "type": "submit",
+      "style": "btn-info",
+      "title": "submit"
+    }
+  ],
+  "schema":{
+    "type": "object",
+    "properties": {
+      "select": {
+        "title": "select one of your other account",
+        "type": "string",
+        "enum": [
+          "accountA",
+          "accountB",
+          "accountC",
+          "accountD",
+          "accountE"
+        ]
+      }
+    },
+    "required": [
+      "select"
+    ]
+  },
+  "model": {
+    "select": "accountA"
+  }
+}
