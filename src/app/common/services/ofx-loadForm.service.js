@@ -2,11 +2,11 @@
     "use strict";
     angular.module("ofx.services", [])
     .constant("jsonUrlConstant",{
-        contactUrl: "test/mock/to-contact.json",
-        myAccountUrl: "test/mock/to-myAccount.json",
-        fromUrl: "test/mock/from.json",
-        amountUrl: "test/mock/amount.json",
-        reviewUrl: "test/mock/review.json"
+        contactUrl: "mock/to-contact.json",
+        myAccountUrl: "mock/to-myAccount.json",
+        fromUrl: "mock/from.json",
+        amountUrl: "mock/amount.json",
+        reviewUrl: "mock/review.json"
     })
     .constant("uiRouterState", {
         home: {
