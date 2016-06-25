@@ -5,7 +5,10 @@
     "angular": "^1.5",
     "angular-ui-router": "^0.2.18",
     "jquery": "^2.2.3",
-    "sg-scb-ng-component": "../scb-ng-component/dist.tar"
+    "angular-sanitize": "^1.5.7",
+    "angular-schema-form": "^0.8.13",
+    "bootstrap": "^3.3.6",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "angular-mocks": "^1.5"
@@ -16,4 +19,3 @@
     "angular": "^1.5"
   }
 }
-

@@ -5,7 +5,7 @@
     'use strict';
     angular.module('ofx',['ui.router','schemaForm','ofx.services'])
         .config(function($locationProvider, $stateProvider, $urlRouterProvider){
-            $locationProvider.html5Mode(true);
+            //$locationProvider.html5Mode(true);
 
             $urlRouterProvider.otherwise('/home');
 
